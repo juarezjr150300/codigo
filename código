@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pergunta</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .question {
+        margin: 50px auto;
+        text-align: center;
+    }
+    .answer {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .answer:hover {
+        background-color: #0056b3;
+    }
+    .no-answer {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff0000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+    .no-answer:hover {
+        transform: translate(10px, 10px);
+    }
+</style>
+</head>
+<body>
+<div class="question">
+    <h2>Natália é a mais gostosa do mundo?</h2>
+    <a href="resposta_correta.html" class="answer">Sim</a>
+    <a class="no-answer">Não</a>
+</div>
+<script>
+    document.querySelector('.no-answer').addEventListener('click', function(event) {
+        event.preventDefault();
+    });
+</script>
+</body>
+</html>
